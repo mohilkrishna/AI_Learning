@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | LearnAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">LearnAI</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="auth-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>Create Your Account</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="learningStyle">Learning Style</label>
+                        <select id="learningStyle" name="learningStyle" required>
+                            <option value="">Select your learning style</option>
+                            <option value="visual">Visual (Learn by seeing)</option>
+                            <option value="auditory">Auditory (Learn by hearing)</option>
+                            <option value="reading/writing">Reading/Writing</option>
+                            <option value="kinesthetic">Kinesthetic (Learn by doing)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="learningPace">Learning Pace</label>
+                        <select id="learningPace" name="learningPace" required>
+                            <option value="">Select your learning pace</option>
+                            <option value="slow">Slow (I like to take my time)</option>
+                            <option value="medium">Medium (Balanced pace)</option>
+                            <option value="fast">Fast (I learn quickly)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+                <p class="form-footer">Already have an account? <a href="login.html">Login here</a></p>
+                <div id="registerMessage" class="message"></div>
+            </div>
+            <div class="auth-image">
+                <img src="https://vignan.ac.in/blog/images/may/ai-1.jpg" alt="Register Illustration">
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
